@@ -28,7 +28,7 @@
         <!-- Updated form action to include name, role, and password fields -->
         <form action="../controllers/signup.php" method="POST">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" required><br>
+            <input type="text" id="username" name="name" placeholder="Enter your username" required><br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
             <label for="role">Role:</label>
