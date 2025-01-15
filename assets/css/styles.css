@@ -501,7 +501,7 @@ footer {
 }
 /* Login Form Container */
 .login-container {
-    max-width: 00px;
+    max-width: 400px;
     margin: 50px auto;
     background-color: #ffffff;
     padding: 25px 20px;
@@ -520,8 +520,17 @@ footer {
 
 /* Input Fields Styling */
 .login-container input[type="text"],
-.login-container input[type="password"],
-.login-container select {
+.login-container input[type="password"]
+{
+    width: 95%;
+    padding: 12px;
+    font-size: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.login-container select{
     width: 100%;
     padding: 12px;
     font-size: 14px;
