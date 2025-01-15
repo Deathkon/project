@@ -15,7 +15,7 @@
             <nav>
                 <ul>
                 <li><a href="../views/index.php">Home</a></li>
-                    <li><a href="../views/login.php" class="active">Login</a></li>
+                    <!-- <li><a href="../views/login.php" class="active">Login</a></li> -->
                     <li><a href="../views/sensors.php">IoT Sensors</a></li>
                     <li><a href="../views/data.php">Data Visualizations</a></li>
                     <li><a href="../views/quizzes.php">Quizzes</a></li>
@@ -63,7 +63,7 @@
             <p>&copy; 2024 Precision Farming Hub | All Rights Reserved</p>
             <ul class="footer-links">
                 <li><a href="../views/index.php">Home</a></li>
-                <li><a href="../views/login.php">Login</a></li>
+                <!-- <li><a href="../views/login.php">Login</a></li> -->
                 <li><a href="../views/sensors.php">IoT Sensors</a></li>
                 <li><a href="../views/data.php">Data Visualizations</a></li>
                 <li><a href="../views/quizzes.php">Quizzes</a></li>
