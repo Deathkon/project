@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,17 +17,28 @@
                     <li><a href="sensors.html">IoT Sensors</a></li>
                     <li><a href="data.html">Data Visualizations</a></li>
                     <li><a href="quizzes.html">Quizzes</a></li>
-                    <li><a href="signup.php">Signup</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="hero">
-            <h2>Welcome to Precision Farming</h2>
-            <p>Learn how IoT technology can revolutionize agriculture.</p>
-            <a href="tutorials.html" class="btn">Start Learning</a>
+        <section class="signup-section">
+            <h2>Signup</h2>
+            <form action="signup.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="Farmer">Farmer</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Student">Student</option>
+                </select><br>
+                <button type="submit">Signup</button>
+            </form>
         </section>
     </main>
 
@@ -40,7 +50,6 @@
                 <a href="https://www.instagram.com/umwamikazi___?igsh=dTE0ZXJtd2Ewcmhi" target="https://www.instagram.com/umwamikazi___?igsh=dTE0ZXJtd2Ewcmhi"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p>&copy; 2024 Precision Farming Hub | All Rights Reserved</p>
             <ul class="footer-links">
@@ -49,10 +58,30 @@
                 <li><a href="sensors.html">IoT Sensors</a></li>
                 <li><a href="data.html">Data Visualizations</a></li>
                 <li><a href="quizzes.html">Quizzes</a></li>
-                <li><a href="signup.php">Signup</a></li>
             </ul>
         </div>
     </footer>
-    
+
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        require 'conn.php';
+
+        $username = $_POST['username'];
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $role = $_POST['role'];
+
+        $stmt = $conn->prepare("INSERT INTO logins (name, password, role) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $username, $password, $role);
+
+        if ($stmt->execute()) {
+            echo "Signup successful!";
+        } else {
+            echo "Error: " . $stmt->error;
+        }
+
+        $stmt->close();
+        $conn->close();
+    }
+    ?>
 </body>
 </html>
