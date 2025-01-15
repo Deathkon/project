@@ -13,7 +13,7 @@
             <nav>
                 <ul>
                     <li><a href="../index.php">Home</a></li>
-                    <li><a href="../views/login.php">Tutorials</a></li>
+                    <li><a href="../views/login.php">Login</a></li>
                     <li><a href="../views/sensors.php">IoT Sensors</a></li>
                     <li><a href="../views/data.php">Data Visualizations</a></li>
                     <li><a href="../views/quizzes.php">Quizzes</a></li>
