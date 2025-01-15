@@ -18,12 +18,12 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Precision Farming Hub | All Rights Reserved</p>
             <ul class="footer-links">
-                <li><a href="../index.php">Home</a></li>
-                <li><a href="../views/login.php">Login</a></li>
-                <li><a href="../views/sensors.php">IoT Sensors</a></li>
-                <li><a href="../views/data.php">Data Visualizations</a></li>
-                <li><a href="../views/quizzes.php">Quizzes</a></li>
-                <li><a href="../views/signup.php">Signup</a></li>
+                <li><a href="/project/index.php">Home</a></li>
+                <li><a href="/project/views/login.php">Login</a></li>
+                <li><a href="/project/views/sensors.php">IoT Sensors</a></li>
+                <li><a href="/project/views/data.php">Data Visualizations</a></li>
+                <li><a href="/project/views/quizzes.php">Quizzes</a></li>
+                <li><a href="/project/views/signup.php">Signup</a></li>
             </ul>
         </div>
     </footer>
