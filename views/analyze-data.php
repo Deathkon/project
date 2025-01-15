@@ -35,7 +35,7 @@
                 <li>Compare real-time data with historical trends to identify patterns.</li>
                 <li>Use the insights to make decisions about irrigation, fertilization, or crop planting.</li>
             </ol>
-            <img src="assets/images/data.jpg" alt="Interpreting IoT Data">
+            <img src="../assets/images/data.jpg" alt="Interpreting IoT Data">
         </section>
     </main>
 
@@ -50,11 +50,12 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Precision Farming Hub | All Rights Reserved</p>
             <ul class="footer-links">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="login.php">Tutorials</a></li>
-                <li><a href="sensors.php">IoT Sensors</a></li>
-                <li><a href="data.php">Data Visualizations</a></li>
-                <li><a href="quizzes.php">Quizzes</a></li>
+                    <li><a href="../views/index.php">Home</a></li>
+                    <li><a href="../views/login.php" class="active">Tutorials</a></li>
+                    <li><a href="../views/sensors.php">IoT Sensors</a></li>
+                    <li><a href="../views/data.php">Data Visualizations</a></li>
+                    <li><a href="../views/quizzes.php">Quizzes</a></li>
+                    <li><a href="../views/signup.php">Signup</a></li>
             </ul>
         </div>
     </footer>

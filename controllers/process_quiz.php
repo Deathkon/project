@@ -32,7 +32,7 @@ foreach ($answers as $question => $correctAnswer) {
             <nav>
                 <ul>
                     <li><a href="../views/index.php">Home</a></li>
-                    <li><a href="../views/tutorials.php">Tutorials</a></li>
+                    <li><a href="../views/login.php">Tutorials</a></li>
                     <li><a href="../views/sensors.php">IoT Sensors</a></li>
                     <li><a href="../views/data.php">Data Visualizations</a></li>
                     <li><a href="../views/quizzes.php" class="active">Quizzes</a></li>

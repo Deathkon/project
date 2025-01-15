@@ -35,7 +35,7 @@
                 <li>Connect the sensors to a microcontroller or gateway device for data transmission.</li>
                 <li>Test the sensors to ensure accurate data collection.</li>
             </ol>
-            <img src="assets/images/sensor-setup-detail.jpg" alt="Detailed Sensor Setup for IoT devices">
+            <img src="../assets/images/sensor-setup-detail.jpg" alt="Detailed Sensor Setup for IoT devices">
         </section>
     </main>
 
@@ -50,11 +50,12 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Precision Farming Hub | All Rights Reserved</p>
             <ul class="footer-links">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="login.php">Tutorials</a></li>
-                <li><a href="sensors.php">IoT Sensors</a></li>
-                <li><a href="data.php">Data Visualizations</a></li>
-                <li><a href="quizzes.php">Quizzes</a></li>
+            <li><a href="../views/index.php">Home</a></li>
+                    <li><a href="../views/login.php" class="active">Tutorials</a></li>
+                    <li><a href="../views/sensors.php">IoT Sensors</a></li>
+                    <li><a href="../views/data.php">Data Visualizations</a></li>
+                    <li><a href="../views/quizzes.php">Quizzes</a></li>
+                    <li><a href="../views/signup.php">Signup</a></li>
             </ul>
         </div>
     </footer>
