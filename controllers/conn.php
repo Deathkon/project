@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "precision_farming";
+$servername = getenv('DB_SERVERNAME');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
+$dbname = getenv('DB_NAME');
 
 // Create connection using prepared statements
 $conn = new mysqli($servername, $username, $password, $dbname);
