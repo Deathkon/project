@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorials Precision Farming Hub</title>
+    <title>Login Precision Farming Hub</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
             <nav>
                 <ul>
                 <li><a href="../index.php">Home</a></li>
-                    <li><a href="../views/login.php" class="active">Tutorials</a></li>
+                    <li><a href="../views/login.php" class="active">Login</a></li>
                     <li><a href="../views/sensors.php">IoT Sensors</a></li>
                     <li><a href="../views/data.php">Data Visualizations</a></li>
                     <li><a href="../views/quizzes.php">Quizzes</a></li>
@@ -54,7 +54,7 @@
             <p>&copy; 2024 Precision Farming Hub | All Rights Reserved</p>
             <ul class="footer-links">
             <li><a href="../index.php">Home</a></li>
-                    <li><a href="../views/login.php" class="active">Tutorials</a></li>
+                    <li><a href="../views/login.php" class="active">Login</a></li>
                     <li><a href="../views/sensors.php">IoT Sensors</a></li>
                     <li><a href="../views/data.php">Data Visualizations</a></li>
                     <li><a href="../views/quizzes.php">Quizzes</a></li>
