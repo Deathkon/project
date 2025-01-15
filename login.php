@@ -18,19 +18,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $role = mysqli_real_escape_string($conn, $_POST['role']);
     $user_password = mysqli_real_escape_string($conn, $_POST['password']);
 
-    // Hash the password for security
-    $hashed_password = password_hash($user_password, PASSWORD_DEFAULT);
+    // Use prepared statements for user login to prevent SQL injection
+    $stmt = $conn->prepare("SELECT password FROM logins WHERE name = ? AND role = ?");
+    $stmt->bind_param("ss", $name, $role);
+    $stmt->execute();
+    $stmt->store_result();
 
-    // Insert user data into the database
-    $sql = "INSERT INTO logins (name, role, password) VALUES ('$name', '$role', '$hashed_password')";
+    if ($stmt->num_rows > 0) {
+        $stmt->bind_result($hashed_password);
+        $stmt->fetch();
 
-    if ($conn->query($sql) === TRUE) {
-        // Redirect to a welcome page after successful login
-        header("Location: content.html");
-        exit();
+        // Verify the password
+        if (password_verify($user_password, $hashed_password)) {
+            // Redirect to a welcome page after successful login
+            header("Location: content.html");
+            exit();
+        } else {
+            echo "Invalid password.";
+        }
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "No user found with the provided credentials.";
     }
+
+    $stmt->close();
 }
 
 $conn->close();

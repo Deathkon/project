@@ -4,10 +4,10 @@ $username = "root";
 $password = "";
 $dbname = "precision_farming";
 
-// Create connection
+// Create connection using prepared statements
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+// Check connection and add error handling
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

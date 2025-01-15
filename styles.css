@@ -607,3 +607,20 @@ th {
     background-color: #f4f4f4;
     font-weight: bold;
 }
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tutorial-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sensor-card, .chart-container {
+        width: 90%;
+    }
+}
