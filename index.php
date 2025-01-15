@@ -13,11 +13,11 @@
             <h1>Precision Farming Hub</h1>
             <nav>
                 <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="login.php">Tutorials</a></li>
-                    <li><a href="sensors.php">IoT Sensors</a></li>
-                    <li><a href="data.php">Data Visualizations</a></li>
-                    <li><a href="quizzes.php">Quizzes</a></li>
+                    <li><a href="./views/index.php">Home</a></li>
+                    <li><a href="./views/login.php">Tutorials</a></li>
+                    <li><a href="./views/sensors.php">IoT Sensors</a></li>
+                    <li><a href="./views/data.php">Data Visualizations</a></li>
+                    <li><a href="./views/quizzes.php">Quizzes</a></li>
                     <li><a href="../controllers/signup.php">Signup</a></li>
                 </ul>
             </nav>
