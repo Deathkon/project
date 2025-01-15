@@ -42,7 +42,7 @@ a:hover {
 
 /* Hero Section */
 #hero {
-    background: url('images/background.jpg') no-repeat center center/cover;
+    background: url('../images/homepage.jpg') no-repeat center center/cover;
     text-align: center;
     padding: 100px 20px;
 }
@@ -80,7 +80,7 @@ footer {
     font-size: 0.9rem;
 }
 #hero {
-    background: url('images/homepage.jpg') no-repeat center center/cover;
+    background: url('../images/homepage.jpg') no-repeat center center/cover;
     text-align: center;
     padding: 100px 20px;
     color: white;
@@ -501,7 +501,7 @@ footer {
 }
 /* Login Form Container */
 .login-container {
-    max-width: 400px;
+    max-width: 00px;
     margin: 50px auto;
     background-color: #ffffff;
     padding: 25px 20px;
