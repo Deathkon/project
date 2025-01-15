@@ -26,7 +26,7 @@
     <div class="login-container">
         <h2>Login to Access the Platform</h2>
         <!-- Updated form action to include name, role, and password fields -->
-        <form action="login.php" method="POST">
+        <form action="../controllers/login.php" method="POST">
             <label for="username">Username:</label>
             <input type="text" id="username" name="name" placeholder="Enter your username" required><br>
             <label for="password">Password:</label>
@@ -40,6 +40,7 @@
             </select><br>
             <button type="submit">Login</button>
         </form>
+        <p>Don't have an account? <a href="signup.php">Signup here</a></p>
     </div>
     <footer>
         <div class="footer-content">
