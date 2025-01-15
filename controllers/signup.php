@@ -19,7 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bind_param("sss", $username, $hashed_password, $role);
 
     if ($stmt->execute()) {
-        header("Location: ../views/content.php");
+        // header("Location: ../views/content.php");
+        echo "User created successfully.";
         exit();
     } else {
         echo "Error: " . $stmt->error;
