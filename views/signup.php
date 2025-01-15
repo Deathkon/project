@@ -24,7 +24,7 @@
         </div>
     </header>
     <div class="login-container">
-        <h2>Login to Access the Platform</h2>
+        <h2>Sign up to Access the Platform</h2>
         <!-- Updated form action to include name, role, and password fields -->
         <form action="../controllers/signup.php" method="POST">
             <label for="username">Username:</label>
