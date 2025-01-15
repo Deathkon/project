@@ -28,7 +28,7 @@
         <section id="hero">
             <h2>Welcome to Precision Farming</h2>
             <p>Learn how IoT technology can revolutionize agriculture.</p>
-            <a href="login.php" class="btn">Start Learning</a>
+            <a href="./views/login.php" class="btn">Start Learning</a>
         </section>
     </main>
 
@@ -44,11 +44,11 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Precision Farming Hub | All Rights Reserved</p>
             <ul class="footer-links">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="login.php">Tutorials</a></li>
-                <li><a href="sensors.php">IoT Sensors</a></li>
-                <li><a href="data.php">Data Visualizations</a></li>
-                <li><a href="quizzes.php">Quizzes</a></li>
+                <li><a href="../views/index.php">Home</a></li>
+                <li><a href="../views/login.php">Tutorials</a></li>
+                <li><a href="../views/sensors.php">IoT Sensors</a></li>
+                <li><a href="../views/data.php">Data Visualizations</a></li>
+                <li><a href="../views/quizzes.php">Quizzes</a></li>
                 <li><a href="../views/signup.php">Signup</a></li>
             </ul>
         </div>

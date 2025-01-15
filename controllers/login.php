@@ -1,16 +1,15 @@
 <?php
 // Database connection
-$servername = getenv('DB_SERVERNAME');
-$username = getenv('DB_USERNAME');
-$password = getenv('DB_PASSWORD');
-$dbname = getenv('DB_NAME');
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "precision_farming";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
-    error_log("Connection failed: " . $conn->connect_error);
-    die("Connection failed. Please try again later.");
+    die("Connection failed: " . $conn->connect_error);
 }
 
 // Check if form is submitted
@@ -32,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Verify the password
         if (password_verify($user_password, $hashed_password)) {
             // Redirect to a welcome page after successful login
-            header("Location: content.php");
+            header("Location: ../views/content.php");
             exit();
         } else {
             error_log("Invalid password for user: " . $name);
