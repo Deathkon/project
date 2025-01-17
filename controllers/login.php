@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // Database connection
 $servername = "localhost";
 $username = "root";
@@ -30,6 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // Verify the password
         if (password_verify($user_password, $hashed_password)) {
+            // Set session variables
+            $_SESSION['username'] = $name;
+            $_SESSION['role'] = $role;
+
             // Redirect to a welcome page after successful login
             header("Location: ../views/content.php");
             exit();

@@ -662,3 +662,48 @@ th {
         transform: translateY(100vh) rotate(360deg);
     }
 }
+
+/* Congratulations Page Styles */
+.congratulations-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+.congratulations-container h1 {
+    font-size: 3rem;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+.congratulations-container p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.congratulations-container button {
+    background-color: #00aaff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.congratulations-container button:hover {
+    background-color: #ffaa00;
+    transform: scale(1.05);
+}
+
+/* Page Restriction Styles */
+.restricted-page {
+    display: none;
+}
+
+.restricted-page.visible {
+    display: block;
+}
