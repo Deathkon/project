@@ -9,7 +9,14 @@
 
 </head>
 <body>
-    <?php include '../components/navbar.php'; ?>
+    <?php 
+    session_start();
+    if (!isset($_SESSION['username'])) {
+        header("Location: login.php");
+        exit();
+    }
+    include '../components/navbar.php'; 
+    ?>
 
     <main>
         <section id="tutorials">

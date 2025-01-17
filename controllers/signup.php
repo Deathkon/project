@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     require 'conn.php';
 
@@ -19,6 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bind_param("sss", $username, $hashed_password, $role);
 
     if ($stmt->execute()) {
+        // Set session variables
+        $_SESSION['username'] = $username;
+        $_SESSION['role'] = $role;
+
+        // Redirect to congratulations page after successful signup
         header("Location: ../views/congratulations.php");
         exit();
     } else {
