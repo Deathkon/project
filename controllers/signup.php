@@ -6,11 +6,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $username = isset($_POST['name']) ? $_POST['name'] : null;
     $password = isset($_POST['password']) ? $_POST['password'] : null;
+    $confirmPassword = isset($_POST['confirmPassword']) ? $_POST['confirmPassword'] : null;
     $role = isset($_POST['role']) ? $_POST['role'] : null;
 
     // Check if any field is empty
-    if (empty($username) || empty($password) || empty($role)) {
+    if (empty($username) || empty($password) || empty($confirmPassword) || empty($role)) {
         echo "All fields are required.";
+        exit();
+    }
+
+    // Server-side password validation
+    if (strlen($password) < 8 || !preg_match('/[A-Z]/', $password) || !preg_match('/[!@#$%^&*]/', $password) || !preg_match('/[0-9]/', $password)) {
+        echo "Password must be at least 8 characters long, contain an uppercase letter, a symbol, and a number.";
+        exit();
+    }
+
+    // Check if passwords match
+    if ($password !== $confirmPassword) {
+        echo "Passwords do not match.";
         exit();
     }
 
